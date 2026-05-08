@@ -16,7 +16,6 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar setSearchText={setSearchText} />
-
       <Routes>
         <Route path="/" element={<Home searchText={searchText} />} />
         <Route path="/business" element={<Business />} />
@@ -25,6 +24,9 @@ const App = () => {
         <Route path="/health" element={<Health />} />
         <Route path="/news" element={<NewsDetails />} />
       </Routes>
+      <footer className="footer">
+        <p>© 2026 NewsHub. All Rights Reserved.</p>
+      </footer>
     </BrowserRouter>
   );
 };
